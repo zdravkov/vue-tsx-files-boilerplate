@@ -9,8 +9,7 @@
     "test:unit": "jest"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Lemoncode/vuejs-by-sample.git"
+    "type": "git"
   },
   "keywords": [
     "vue.js",
@@ -20,9 +19,6 @@
   ],
   "author": "Lemoncode",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Lemoncode/vuejs-by-sample/issues"
-  },
   "jest": {
     "moduleFileExtensions": [
       "js",

@@ -16,10 +16,7 @@ module.exports = {
     app: './main.ts',
     vendor: [
       'vue',
-    ],
-    vendorStyles: [
-      '../node_modules/bootstrap/dist/css/bootstrap.css',
-    ],
+    ]
   },
   output: {
     path: path.join(basePath, 'dist'),
@@ -45,8 +42,6 @@ module.exports = {
           'css-loader',
         ],
       },
-      // Loading glyphicons => https://github.com/gowravshekar/bootstrap-webpack
-      // Using here url-loader and file-loader
       {
         test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'url-loader?limit=10000&mimetype=application/font-woff'

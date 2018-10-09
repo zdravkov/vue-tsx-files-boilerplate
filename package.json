@@ -1,7 +1,7 @@
 {
   "name": "sample-vue-js",
   "version": "1.0.0",
-  "description": "Sample working with TypeScript and Webpack",
+  "description": "Sample Vue Tsx boilerplate",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
@@ -17,7 +17,6 @@
     "typescript",
     "webpack"
   ],
-  "author": "Lemoncode",
   "license": "MIT",
   "jest": {
     "moduleFileExtensions": [

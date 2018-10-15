@@ -37,7 +37,6 @@
     ],
     "testURL": "http://localhost/"
   },
-  "homepage": "https://github.com/Lemoncode/vuejs-by-sample#readme",
   "devDependencies": {
     "@types/jest": "^23.3.3",
     "@vue/test-utils": "^1.0.0-beta.25",

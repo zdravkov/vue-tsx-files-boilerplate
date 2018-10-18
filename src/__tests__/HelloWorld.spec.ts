@@ -6,7 +6,7 @@ describe('Hello', () => {
     const message = 'new message'
     const wrapper = shallowMount(HelloComponent, {
       propsData: { message }
-    })
+    });
     expect(wrapper.text()).toMatch(message)
   })
 })

@@ -1,27 +1,29 @@
-import { VNode } from 'vue';
-import {VueComponent} from './vue-ts-component';
-import { Component, Prop, Vue } from 'vue-property-decorator';
-import AProps from './hellointerface';
+import Vue, { VNode } from "vue";
+import Component from 'vue-class-component';
+import HelloWorldInterface from './helloInterface';
 
-@Component
-class HelloComponent extends VueComponent <AProps> {
-  @Prop() message!: string;
-  //internal
-  private msg = 123
+@Component({
+  props: {
+    message: String
+  }
+})
+class HelloComponent extends Vue implements HelloWorldInterface{
+  constructor(){
+    super()
+  }
+  public msg = 123;
   public _columns: any[] = [];
+  public created() {
+    this._columns = [];
+  };
 
-// computed
   get computedMsg () {
     return 'computed ' + this._columns.length
   }
 
-  public created () {
-    this._columns = [];
-  }
-
   public render(h: any): VNode {
     return (
-      <h1>{ this.message }</h1>
+      <h1>{ this.$props.message }</h1>
     );
   }
 }

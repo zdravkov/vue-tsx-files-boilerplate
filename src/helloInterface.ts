@@ -1,3 +1,3 @@
-export default interface AProps {
-  message: string;
+export default interface HelloWorldInterface {
+  msg: number;
 }

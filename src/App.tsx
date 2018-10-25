@@ -21,7 +21,6 @@ export default class App extends Vue {
 
   public render(h: any): VNode {
     return (
-      // @ts-ignore
       <div>
          <button onClick={this.clickHandler}>Click to increase counter</button>
       <HelloWorld1 message={this.text} onSomeChange={this.some} ></HelloWorld1>

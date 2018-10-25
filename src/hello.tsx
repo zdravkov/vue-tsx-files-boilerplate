@@ -4,7 +4,8 @@ import HelloWorldInterface from './helloInterface';
 
 @Component({
   props: {
-    message: String
+    message: String,
+    someChange: Function
   }
 })
 class HelloComponent extends Vue implements HelloWorldInterface{
@@ -15,6 +16,14 @@ class HelloComponent extends Vue implements HelloWorldInterface{
   public _columns: any[] = [];
   public created() {
     this._columns = [];
+  };
+
+  public updated() {
+    console.log('updated')
+  };
+
+  public mounted() {
+    this.$emit('someChange', { a: 1 });
   };
 
   get computedMsg () {
